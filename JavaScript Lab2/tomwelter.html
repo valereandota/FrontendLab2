@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom's quiz!</title>
+    <Link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainframe">
+        <h1>Tom's test quiz!</h1>
+    </div>
+    <table class="t1">
+        <form>
+            <div class="input-bx">
+                <label for="name">Name:</label>
+                <input type="name" id="name" name="name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+            </div>
+            <h3>Questions : </h3>
+            <div class="quiz">
+                Which country do cities of Perth, Adelade & Brisbane belong to? <br>
+                <input type="radio" name="q1" id="q1a1">China
+                <input type="radio" name="q1" id="q1a2">Japan
+                <input type="radio" name="q1" id="q1a3">Australia<br><br>
+                What countries made up the original Axis powers in World War II? <br>
+                <input type="checkbox" id="q2a1">Japan
+                <input type="checkbox" id="q2a2">Germany
+                <input type="checkbox" id="q2a3">Italy<br><br>
+                What does “www” stand for? <br>
+                <input type="text" id="q3"><br><br>
+                <button type="button" class="submit" onclick="validate()">Submit</button>
+                <script src="handler.js"></script>
+                <input type="Reset">
+            </div>
+        </form>
+    </table>
+</body>
+
+</html>
